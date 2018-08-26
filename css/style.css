@@ -2209,6 +2209,7 @@ footer{
     line-height: 20px;
     padding: 20px 10px; 18px;
     vertical-align: middle;
+    border: 1px solid #efeae1;
 }
 .article_bl table td{
     font: 17px 'Montserrat';
@@ -2487,6 +2488,15 @@ footer{
 .employees_data_table table tr th:last-child,
 .employees_data_table table tr td:last-child{
     border-right: none;
+}
+.employees_data_table table tr td.w40{
+    width: 40%;
+}
+.employees_data_table table tr td.w30{
+    width: 30%;
+}
+.employees_data_table table tr td.w15{
+    width: 15%;
 }
 table.width_3 td:first-child{
     width: 45%;
