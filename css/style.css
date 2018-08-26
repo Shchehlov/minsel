@@ -2054,7 +2054,7 @@ footer{
     position: relative;
     padding-bottom: 60px;
 }
-.article_bl .h1{
+.inner_desc_bg .h1{
     font: 42px 'Montserrat';
     color: #2b4217;
     line-height: 49px;
@@ -2292,7 +2292,7 @@ footer{
     .inner_desc_bg{
         padding-top: 40px;
     }
-    .article_bl .h1{
+    .inner_desc_bg .h1{
         font-size: 32px;
         line-height: 39px;
     }
@@ -2304,7 +2304,7 @@ footer{
     }
 }
 @media all and (max-width: 700px){
-    .article_bl .h1{
+    .inner_desc_bg .h1{
         font-size: 26px;
         line-height: 32px;
     }
@@ -2347,7 +2347,7 @@ footer{
     }
 }
 @media all and (max-width: 450px) {
-    .article_bl .h1{
+    .inner_desc_bg .h1{
         font-size: 22px;
         line-height: 29px;
     }
@@ -2358,9 +2358,6 @@ footer{
         padding: 14px 5px 13px;
     }
 }
-
-/* News Page */
-
 
 /* 404 Page */
 .bg_404{
@@ -2430,6 +2427,245 @@ footer{
     .flex_404 .txt_2{
         font-size: 14px;
         margin-top: 10px;
+    }
+}
+
+/* Contacts Page */
+.contacts_info{
+    padding-top: 32px;
+    padding-bottom: 40px;
+    font: 18px 'Montserrat';
+    line-height: 30px;
+}
+.contacts_info b{
+    font-weight: 700;
+}
+.contacts_info a{
+    color: #2b5f9b;
+    text-decoration: none;
+}
+.contacts_info .marg{
+    margin-bottom: 16px;
+}
+.contacts_info .marg:last-child{
+    margin-bottom: 0;
+}
+.employees_data_table{
+    margin-top: 34px;
+}
+.employees_data_table table {
+    width: 100%;
+    background: #e2eaf4;
+    border-collapse: collapse;
+}
+.employees_data_table .table_hide table{
+    min-width: 450px;
+}
+.employees_data_table table tr th,
+.employees_data_table table tbody tr th{
+    background: #f6f6f4;
+    font: 18px 'Montserrat';
+    font-weight: 600;
+    padding: 20px;
+    vertical-align: middle;
+    border-right: 1px solid #d2c5b0;
+    border-bottom: 1px solid #d2c5b0;
+    text-align: center;
+}
+.employees_data_table table tr td{
+    font: 17px 'Montserrat';
+    padding: 20px;
+    background: #f6f6f4;
+    vertical-align: middle;
+    border-right: 1px solid #d2c5b0;
+    border-bottom: 1px solid #d2c5b0;
+}
+.employees_data_table table tr:last-child th,
+.employees_data_table table tr:last-child td{
+    border-bottom: none;
+}
+.employees_data_table table tr th:last-child,
+.employees_data_table table tr td:last-child{
+    border-right: none;
+}
+table.width_3 td:first-child{
+    width: 45%;
+}
+table.width_3 td:nth-child(2){
+    width: 35%;
+}
+table.width_3 td:nth-child(3){
+    width: 20%;
+}
+.employees_data_table .table_tab{
+    width: 100%;
+    background: #cee2bd;
+    font: 18px 'Montserrat';
+    color: #000000;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 9px 20px;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.employees_data_table .table_second{
+    display: none;
+}
+.employees_data_table .table_second .table_tab{
+    background: #efeae1;
+}
+.employees_data_table .table_hide{
+    display: none;
+    overflow-x: auto;
+}
+.employees_data_table .name_flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+}
+.employees_data_table .name_flex .foto{
+    margin-right: 22px;
+}
+.form_bg{
+    background: #f6f6f4;
+    margin-top: 100px;
+    padding: 74px 0 80px;
+}
+.form_bl{
+    position: relative;
+}
+.form_bl .h2{
+    font: 42px 'Montserrat';
+    color: #2b4217;
+    font-weight: 700;
+}
+.form_bl .left_form{
+    max-width: 750px;
+    margin-top: 41px;
+}
+.form_bl .pf_2{
+    font: 18px 'Montserrat';
+    line-height: 28px;
+    color: #231f20;
+    margin-bottom: 28px;
+}
+.form_bl .inp_1{
+    width: calc(100% - 15px);
+    height: 36px;
+    font: 14px 'Montserrat';
+    color: #9fa5aa;
+    padding-left: 15px;
+    margin-bottom: 11px;
+    border: 1px solid #efebe2;
+}
+.form_bl .obyaz_pol{
+    font: 14px 'Montserrat';
+    color: #ec1c24;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.form_bl .form_textarea{
+    width: calc(100% - 15px);
+    height: 175px;
+    font: 14px 'Montserrat';
+    color: #9fa5aa;
+    padding-left: 15px;
+    padding-top: 8px;
+    border: 1px solid #efebe2;
+    resize: vertical;
+}
+.form_bl .form_error{
+    border: 2px solid #ec1c24;
+    color: #ec1c24;
+}
+.form_bl .sub{
+    width: 150px;
+    height: 40px;
+    font: 14px 'Montserrat';
+    font-weight: 600;
+    background-color: #c49c5b;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
+}
+.form_bl .sub:hover{
+    background-color: #5a7d37;
+}
+@media all and (max-width: 900px) {
+    .form_bg{
+        padding: 50px 0 60px;
+    }
+    .form_bl .h2{
+        font-size: 35px;
+    }
+    .form_bl .left_form{
+        margin-top: 25px;
+    }
+    .form_bl .pf_2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media all and (max-width: 700px) {
+    .contacts_info{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .employees_data_table{
+        margin-top: 20px;
+    }
+    .employees_data_table table tr th,
+    .employees_data_table table tbody tr th{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .employees_data_table table tr td,
+    .employees_data_table table tbody tr td{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .employees_data_table .table_tab{
+        font-size: 14px;
+        line-height: 22px;
+        padding: 9px 10px;
+    }
+    .form_bg{
+        margin-top: 50px;
+    }
+}
+@media all and (max-width: 550px){
+    .contacts_info .marg{
+        margin-bottom: 10px;
+    }
+    .contacts_info{
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+    .form_bl .h2{
+        font-size: 23px;
+    }
+    .form_bl .left_form{
+        margin-top: 26px;
+    }
+    .form_bl .pf_2{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .form_bl .obyaz_pol{
+        margin-top: 10px!important;
+    }
+    .form_bl .sub{
+        margin-top: 20px;
     }
 }
 /* Inner Page */

@@ -58,6 +58,10 @@ $(document).ready(function(){
         $('.menu_bl .menu').slideToggle();
     });
     
+    $('.employees_data_table .table_tab').click(function(){
+        $(this).next('.table_hide,.table_second').slideToggle();
+    });
+    
     $(".fancybox").fancybox({
         helpers : {
             title : {
@@ -73,6 +77,5 @@ $(document).ready(function(){
         e.preventDefault();
         $('.helpful_information_bl .more_item').slideDown();
     });
-    
     
 });
