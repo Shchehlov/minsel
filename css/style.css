@@ -2678,4 +2678,106 @@ table.width_3 td:nth-child(3){
         margin-top: 20px;
     }
 }
+
+/* List Pages Page */
+.list_pages{
+    padding: 24px 0 70px;
+}
+.list_pages .page_tab{
+    font: 28px 'Montserrat';
+    font-weight: 700;
+    color: #2b4217;
+    padding: 9px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0d7c7;
+    cursor: pointer;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
+}
+.list_pages .page_tab h2{
+    -webkit-box-flex: 1;-ms-flex: 1 0;flex: 1 0;
+}
+.list_pages .page_tab .ico{
+    width: 51px;
+    height: 51px;
+    background: url(../img/plus-big-dark-ico.png) center no-repeat #efeae1;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
+    margin-left: 10px;
+}
+.list_pages .page_tab.active,
+.list_pages .page_tab:hover{
+    color: #5a7d37;
+}
+.list_pages .page_tab:hover .ico{
+    background: url(../img/plus-big-ico.png) center no-repeat #5a7d37;
+}
+.list_pages .page_tab.active .ico{
+    background: url(../img/minus-ico.png) center no-repeat #efeae1;
+}
+.list_pages .page_tab.active:hover .ico{
+    background: url(../img/minus-ico-hover.png) center no-repeat #5a7d37;
+}
+.list_pages .second_hide{
+    display: none;
+}
+.list_pages .page_item{
+    text-decoration: none;
+    color: #2b4217;
+    font: 18px 'Montserrat';
+    font-weight: 600;
+    line-height: 26px;
+    border-bottom: 1px dotted #c49c5b;
+    -webkit-transition: all linear .2s;
+    transition: all linear .2s;
+    display: block;
+    padding: 14px 0 12px;
+}
+.list_pages .page_item:last-child{
+    border-bottom: 2px solid #e0d7c7;
+}
+.list_pages .page_item:hover{
+    color: #5a7d37;
+}
+@media all and (max-width: 1023px){
+    .list_pages{
+        padding-bottom: 50px;
+    }
+    .list_pages .page_tab{
+        font-size: 22px;
+    }
+    .list_pages .page_tab .ico{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media all and (max-width: 700px){
+    .list_pages{
+        padding-bottom: 40px;
+    }
+    .list_pages .page_tab{
+        font-size: 18px;
+    }
+    .list_pages .page_item{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media all and (max-width: 500px){
+    .list_pages .page_tab{
+        font-size: 16px;
+    }
+    .list_pages .page_item{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
 /* Inner Page */

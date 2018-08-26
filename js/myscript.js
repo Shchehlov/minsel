@@ -62,6 +62,11 @@ $(document).ready(function(){
         $(this).next('.table_hide,.table_second').slideToggle();
     });
     
+    $('.list_pages .page_tab').click(function(){
+        $(this).toggleClass('active');
+        $(this).next('.list_pages .second_hide').slideToggle();
+    });
+    
     $(".fancybox").fancybox({
         helpers : {
             title : {
