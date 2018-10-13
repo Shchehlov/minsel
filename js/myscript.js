@@ -1,5 +1,19 @@
 $(document).ready(function(){
     
+    var masTab = $('.service_tabs .tab'), masServices = $('.services_wrap');
+    $(masTab).click(function(){
+        $('.service_tabs .tab').removeClass('active');
+        $(this).addClass('active');
+        var ind = $(this).index();
+        $('.services_wrap').hide();
+        $(masServices[ind]).fadeIn();
+    });
+    
+    $('.services_wrap .mob_tab').click(function(){
+        $(this).toggleClass('active');
+        $(this).parent().find('.services_bg').slideToggle();
+    });
+    
     $('.header_sliders_flex .main_slider').slick({
         arrows: false,
         dots: true,
